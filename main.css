@@ -1,3 +1,61 @@
+#icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* background-color: #db839f; */
+}
+
+#icons a, #icons button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80;
+}
+
+#icons a:hover, #icons button:hover{
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+}
+
+.icon{
+    /* padding-top: 10px; */
+    text-decoration: none;
+    font-size: 15px;
+    color: #A89FB6;
+    margin-top: -10px;
+    /* margin-right: 15px; */
+    /* font-family: "CeraPro","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif; */
+}
+
+/* .icon span{
+    opacity: 0;
+} */
+
+#top{
+    background-color: #db839f;
+    text-align: center;
+    color:#FFFFFF;
+    width: 100%;
+    line-height:50px;
+    position: fixed;
+    left: 0;
+}
+
+#top span{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #banner-icons{
     margin-right: 20px;
     margin-top: 10px;
@@ -10,6 +68,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: sticky;
+    top: 51px;
 }
 
 @media(max-width: 650px) {
@@ -25,12 +85,14 @@
 
 body{
     /* background-color: blanchedalmond; */
-    margin: 0;
+    margin: 0 20px;
     background-color: #fff;
     color: #000;
     font-family: "CeraPro","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1.4rem;
     line-height: 1.4;
+    height: 1000px;
+    /* width: 100%; */
 }
 
 
@@ -42,6 +104,7 @@ body{
 }
 
 #nav a{
+    height: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +114,9 @@ body{
     line-height: 1.4;
     color: palevioletred;
     text-decoration: none;
-    padding: 20px 35px;
+    padding: 0 35px;
+    padding-top: 20px;
+    
 }
 
 #nav a:hover{
@@ -63,9 +128,4 @@ body{
 
 #nav a img{
     margin-top: 10px;
-    /* transform: scale(.5); */
-}
-
-#banner-icons img{
-    padding: 30px 5px;
 }
