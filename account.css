@@ -25,11 +25,6 @@
     /* text-decoration: underline; */
 } 
 
-.form a{
-    text-decoration: none;
-    color: #000;
-}
-
 .form p{
     text-align: center;
     font-family: "CeraPro","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -58,15 +53,16 @@ input:focus {
 	border: 1px solid #db839f;
 }
 
-.login-button:hover, .create-account-button:hover, .form a:hover {
-	background: black;
+.login-button:hover, .create-account-button:hover {
+	/* background: black;
 	color: white;
-	border: 1px solid black;
+    border: 1px solid black; */
+    transform: scale(0.95);
 }
 
 /*simulate button characterictics for anchor
   -> add button deafult css */
-.form a{
+.create-account-button{
     text-rendering: auto;
     color: buttontext;
     letter-spacing: normal;
@@ -90,7 +86,7 @@ input:focus {
     width: 200px;
 }
 
-.login-button, .create-account-button, .form a {
+.login-button, .create-account-button {
     display: block;
 	margin: 0 auto;
 	line-height: 28pt;
@@ -101,4 +97,11 @@ input:focus {
 	outline: none;
 	border: 1px solid black;
 	box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+
+.create-account-button{
+    text-decoration: none;
+    background: black;
+	color: white;
+    border: 1px solid black;
 }
