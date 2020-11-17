@@ -65,7 +65,7 @@ input[type="search"] {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 170px;
+    top: 160px;
     background-color: rgba(255,255,255,0.95);
     z-index: 950;
 }
