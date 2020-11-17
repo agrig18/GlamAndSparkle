@@ -5,6 +5,8 @@
         <link rel="shortcut icon" href="svgs/gem.svg" type="svg">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="search.css">
+        <script src="main.js"></script>
         <title>
             Account | Glam&Sparkle by anngel
         </title>
@@ -82,6 +84,20 @@
                 </a>
             </form> 
         </div> 
+
+        <div id="search-overlay" style="display: none;" aria-hidden="true">
+            <p class="label">
+                tell us what you’re looking for?♡
+            </p>
+
+            <form action="/search" method="get" role="search" class="search-form">
+                <input type="search" name="q" placeholder="ENTER KEYWORD">
+                <button class="btn" type="submit">
+                    <img src="svgs/search (2).svg" class="icon">
+                </button>
+            </form>
+        </div>
+        <div id="search-overlay-dimmer" style="display: none;"></div>
 
     </body>
 </html>
