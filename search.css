@@ -4,8 +4,8 @@
     right: 0;
     top: 160px;
     z-index: 1000;
-    padding: 50px;
-    max-width: 1000px;
+    padding: 30px 20px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -16,13 +16,16 @@
     text-align: center;
     color: palevioletred;
     letter-spacing: 2px;
+    margin: 30px 0 80px;
+    max-width: 600px;
 }
 
 .search-form {
-    width: 60%;
+    width: 100%;
     position: relative;
-    margin: 0 auto;
-    margin-top: 80px;
+    max-width: 575px;
+    margin: 0px 10px;
+    padding: 7px 0px 15px;
 }
 
 /*Remove the X icon in the input field: */
@@ -34,24 +37,26 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 input[type="search"] {
     font-size: 16px;
     /* font-family: Snell Roundhand, cursive; */
+    width: 100%;
     border: none;
     border-bottom: 2px solid palevioletred;
     height: 50px;
-    max-width: 100%;
-    width: 100%;
     transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
     text-align: center;
     letter-spacing: 2px;
     color: #6C6C6C;
     background-color: transparent;
     outline: none;
+    text-transform: none;
+    padding: 0 30px;
 }
 
 .search-form .btn {
     position: absolute;
     top: 0;
     right: 0;
-    padding-top: 12px;
+    /* padding: 0; */
+    padding-top: 20px;
     outline: none;
 }
 
