@@ -6,9 +6,10 @@
     top: 160px;
     z-index: 101;
     padding: 30px 20px;
-    /* width: 96vw; */
-    width: 80vw;
+    max-width: 600px;
     margin: 0 auto;
+    width: 88vw;
+
 }
 
 .label{
@@ -19,7 +20,8 @@
     color: palevioletred;
     letter-spacing: 2px;
     margin: 30px 0 80px;
-    max-width: 600px;
+    /* max-width: 600px; */
+
 }
 
 .search-form {
@@ -76,7 +78,7 @@ input[type="search"] {
     bottom: 0;
     top: 160px;
     background-color: rgba(255,255,255,0.95);
-    z-index: 100;  
+    z-index: 100;      
 }
 
 
@@ -84,4 +86,17 @@ input[type="search"] {
     #search-overlay-dimmer{
         top: 60px;
     }
+}
+
+@media only screen and (max-width: 767px) {
+    #search-overlay{
+        top: 110px;
+    }
+
+    .label{
+        margin-bottom: 50px;
+        white-space: pre-line;
+    }
+
+    
 }
