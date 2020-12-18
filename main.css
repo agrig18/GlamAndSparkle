@@ -9,8 +9,8 @@ body{
     font-size: 1.4rem;
     line-height: 1.4;
     height: 1000px;
-    /* transition: all 0.5s ease; */
-    max-width: 100vw;
+    transition: all 0.5s ease;
+    /* max-width: 100vw; */
 }
 
 #top{
@@ -35,12 +35,9 @@ body{
     min-width: 116px;
 }
 #body{
-    /* height: 100%; */
     transition: all .5s ease;
-    /* overflow-x: hidden; */
-    max-width: 100%;
-
 }
+
 #banner{
     background-color: #fff;
     /* background-color: blanchedalmond; */
@@ -51,7 +48,9 @@ body{
     z-index: 100;
     top: 40px;
     left: 0;
-    /* width: 96vw; */
+    /* width: 100%; */
+    width: 96vw;
+    transition: all 0.5s ease;
 }
 
 #banner-left #nav-mobile, #icon-mobile{
@@ -194,7 +193,8 @@ label{
     z-index: 101;
     transition: all .5s ease;
 }
-#body #search-overlay, #body #search-overlay-dimmer{
+
+#search-overlay, #search-overlay-dimmer{
     transition: all .5s ease;   
 }
 
@@ -205,7 +205,6 @@ label{
         padding: 0; */
         text-decoration: none;
     }
-   
     .sidebar{
         display: block;
         position: fixed;
@@ -219,6 +218,7 @@ label{
     }
     #body{
         overflow-x: hidden;
+        /* width: 100%; */
     }
     .sidebar #header{
         font-size: 22px;
@@ -226,7 +226,7 @@ label{
         text-align: center;
         line-height: 70px;
         background: white;
-        user-select: none;
+        user-select: none;        
     }
     .sidebar #header img{
         width: 140px;
@@ -305,9 +305,16 @@ label{
     }
 
     #check:checked ~ #body #search-overlay{
-        position: absolute;
-        margin-left: 100px;
+        margin-left: 450px;
+        white-space: nowrap;
     }
+
+    
+    #check:checked ~ #body #banner{
+        margin-left: 360px;
+    }
+
+
 
     #heart-icon{
         margin-top: 80px;
@@ -326,7 +333,7 @@ label{
     }
     #banner{
         position: fixed;
-        width: 100%;
+        /* width: 100%; */
         top: 0;
     }
     
@@ -354,7 +361,6 @@ label{
         /* height: 30px; */
         margin-left: 50px;
     }
-
 
     #banner-center{
         /* width: 50%; */
@@ -397,7 +403,6 @@ label{
         height: 25px;
         width: 25px;
     }
-    
     .icon-label{
         display: none;
     }
@@ -405,16 +410,14 @@ label{
 }
 
 @media only screen and (max-width: 767px) {
-    /* body{
-        max-width: 100%;
-    } */
-    #check:checked ~ .sidebar{
-        width: 100vw;
-    }
+    
     #check:checked ~ label #cancel{
         position: fixed;
-        left: 95%;
+        left: 90vw;
         top: 20px;
+    }
+    #check:checked ~ .sidebar{
+        width: 100%;
     }
     .sidebar #nav-mobile a{
         padding-left: 0;
@@ -432,7 +435,7 @@ label{
     } */
 }
 
-@media only screen and (min-width: 200px) {
+@media only screen and (max-width: 200px) {
     /* #body{
         max-width: 100vw;
     } */
