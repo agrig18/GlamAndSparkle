@@ -10,7 +10,6 @@ body{
     line-height: 1.4;
     height: 1000px;
     /* transition: all 0.5s ease; */
-    /* max-width: 100vw; */
 }
 
 #top{
@@ -48,7 +47,6 @@ body{
     z-index: 100;
     top: 40px;
     left: 0;
-    /* width: 100%; */
     width: 96vw;  
     transition: all 0.5s ease;
 }
@@ -197,9 +195,10 @@ label{
 @media only screen and (max-width: 1070px) {
     *{
         list-style: none;
-        /* margin: 0;
-        padding: 0; */
         text-decoration: none;
+    }
+    #body{
+        overflow-x: hidden;
     }
     .sidebar{
         display: block;
@@ -212,11 +211,7 @@ label{
         height: 100%;
         transition: all .5s ease; 
     }
-    #body{
-        overflow-x: hidden;
-        /* transition: all .5s ease;  */
-        /* width: 100%; */
-    }
+    
     .sidebar #header{
         font-size: 22px;
         color: white;
@@ -234,7 +229,6 @@ label{
     }
     .sidebar #nav-mobile a{
         display: block;
-        /* height: 100%; */
         width: 100%;
         line-height: 65px;
         font-size: 20px;
@@ -267,8 +261,6 @@ label{
         font-size: 35px;
         z-index: 101;
         /* transition: all 0.5s ease; */
-        /* padding: 6px 12px; */
-        /* color: white; */
     }
     label #cancel{
         position: fixed;
@@ -310,8 +302,6 @@ label{
     #check:checked ~ #body #banner{
         margin-left: 360px;
     }
-
-
 
     #heart-icon{
         margin-top: 80px;
@@ -423,10 +413,4 @@ label{
     #nav-mobile a:hover{
         padding-left: 50px;
     }
-}
-
-@media only screen and (max-width: 200px) {
-    /* #body{
-        max-width: 100vw;
-    } */
 }
