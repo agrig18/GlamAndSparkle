@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <link rel="shortcut icon" type="image/x-icon" href="//cdn.shopify.com/s/files/1/0149/4614/0260/t/194/assets/favicon.ico?32221"> -->
         <!-- <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0149/4614/0260/files/favicon_32x32.png?v=1563372676" type="image/png"> -->
         <link rel="shortcut icon" href="svgs/gem.svg" type="svg">
@@ -136,16 +137,16 @@
                 
             </div><br><br><br>
 
-            <div class="register">
-                <form method="post" action="/account/login" class="form">
+            <div id="main-content">
+                <form method="post" action="/account/login" id="register-form">
                     <h1>create an account</h1>
                     <input placeholder="FIRST NAME" type="text">
                     <input placeholder="LAST NAME" type="text">
                     <input placeholder="TELEPHONE" type="number">
                     <input placeholder="EMAIL" type="email">
                     
-                    <select id="birthday-day">
-                        <option value="day" selected="">Day</option>
+                    <select id="birthday-day" class="birthday">
+                        <option value="day" selected>Day</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -178,8 +179,8 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                     </select>
-                    <select id="birthday-month">
-                        <option value="month" selected="">Month</option>
+                    <select id="birthday-month" class="birthday">
+                        <option value="month" selected>Month</option>
                         <option value="1">January</option>
                         <option value="2">February</option>
                         <option value="3">March</option>
@@ -193,8 +194,8 @@
                         <option value="11">November</option>
                         <option value="12">December</option>
                     </select>
-                    <select id="birthday-year">
-                        <option value="year" selected="">Year</option>
+                    <select id="birthday-year" class="birthday">
+                        <option value="year" selected>Year</option>
                             
                         <option value="2020">2020</option>
                     
@@ -405,7 +406,7 @@
                         <option value="1917">1917</option>
 
                     </select>
-                    
+
                     <input placeholder="CREATE A PASSWORD" type="password">
                     <button class="register-button">SUBMIT</button>
                 </form> 
