@@ -1,11 +1,3 @@
-/****************************************
-
-ES ARIS MAIN.CSS IS FAILI ROCA
-BANNER IS SURATI MTEL SIGANEZEA
-
-
-******************************************/
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
 body{
@@ -16,7 +8,6 @@ body{
     font-family: "CeraPro","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1.4rem;
     line-height: 1.4;
-    height: 1000px;
     margin: 0;
     /* max-width: 97vw; */
     /* transition: all 0.5s ease; */
@@ -315,6 +306,10 @@ label{
         white-space: nowrap;
     }
 
+    #check:checked ~ #body #main-content{
+        transform: translate(25%, 0);
+        white-space: nowrap;
+    }
 
     #check:checked ~ #body #banner{
         margin-left: 360px;
