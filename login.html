@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="login.css">
         <link rel="stylesheet" href="search.css">
         <script src="main.js"></script>
+        <script src="login.js"></script>
         <title>
             Account | Glam&Sparkle by anngel
         </title>
@@ -23,23 +24,23 @@
                 <img src="images/glam.png" alt="">
             </div>
             <div id="nav-mobile">
-                <a href="#">
+                <a href="./product.html?f=skin">
                     <img src="svgs/facial-treatment.svg" height="20px">
                     Skin
                 </a>
-                <a href="#">
+                <a href="./product.html?f=eyes">
                     <img src="svgs/mascara (1).svg" height="20px">
                     Eyes
                 </a>
-                <a href="#">
+                <a href="./product.html?f=lips">
                     <img src="svgs/lipstick (1).svg" height="20px">
                     Lips
                 </a>
-                <a href="#">
+                <a href="./product.html?f=nails">
                     <img src="svgs/nail-polish.svg" height="20px">
                     Nails
                 </a>
-                <a href="#">
+                <a href="./product.html?f=allproducts">
                     <img src="svgs/make-up.svg" height="20px">
                     All Products
                 </a>
@@ -81,19 +82,19 @@
                 <div id="banner-center">
 
                     <div id="nav">
-                        <a href="#">Skin
+                        <a href="./product.html?f=skin">Skin 
                             <img src="svgs/facial-treatment (1).svg" height="40px">
                         </a>
-                        <a href="#">Eyes
+                        <a href="./product.html?f=eyes">Eyes
                             <img src="svgs/mascara.svg" height="40px">
                         </a>
-                        <a href="#">Lips
+                        <a href="./product.html?f=lips">Lips
                             <img src="svgs/lipstick (3).svg" height="40px">
                         </a>
-                        <a href="#">Nails
+                        <a href="./product.html?f=nails">Nails
                             <img src="svgs/nail-polish2.svg" height="40px">
                         </a>
-                        <a href="#">All Products
+                        <a href="./product.html?f=allproducts">All Products
                             <img src="svgs/make-up (1).svg" height="40px">
                         </a>
                     </div>
@@ -138,11 +139,11 @@
             </div><br><br><br>
             
             <div id="main-content">
-                <form method="post" action="/account/login" id="login-form">
+                <form method="post" action="/main.html" id="login-form">
                     <h1>Login</h1>
-                    <input placeholder="ENTER YOUR EMAIL ADDRESS" type="email">
-                    <input placeholder="ENTER YOUR PASSWORD" type="password" >
-                    <button class="login-button">LOGIN</button>
+                    <input placeholder="ENTER YOUR EMAIL ADDRESS" type="email" id= "email" name="email"required>
+                    <input placeholder="ENTER YOUR PASSWORD" type="password" id="password" name="password" required>
+                    <button class="login-button white-btn">LOGIN</button>
                     <p>OR</p>
                     <!-- <a href="/account/register" class="create-account-button"> -->
                     <a href="register.html" class="create-account-button">
