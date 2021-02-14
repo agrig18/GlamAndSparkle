@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="shortcut icon" type="image/x-icon" href="//cdn.shopify.com/s/files/1/0149/4614/0260/t/194/assets/favicon.ico?32221"> -->
+        <!-- <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0149/4614/0260/files/favicon_32x32.png?v=1563372676" type="image/png"> -->
+        <link rel="shortcut icon" href="svgs/gem.svg" type="svg">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="search.css">
+        <link rel="stylesheet" href="product.css">
+        <script src="main.js"></script>
+        <script src="router.js"></script>
+        <title>
+            Account | Glam&Sparkle by anngel
+        </title>
+    </head>
+    <body>
+        <input type="checkbox" id="check"></input>
+        <label for="check">
+            <img src="svgs/menu (2).svg" id="menu" alt="menu" width=25px height="25px">
+            <img src="svgs/cancel (1).svg" id="cancel" alt="cancel" width=20px height="20px">
+        </label>
+        <div class="sidebar" id="main-nav">
+            <div id = "header">
+                <img src="images/glam.png" alt="">
+            </div>
+            <div id="nav-mobile">
+                <a href="./product.html?f=skin">
+                    <img src="svgs/facial-treatment.svg" height="20px">
+                    Skin
+                </a>
+                <a href="./product.html?f=eyes">
+                    <img src="svgs/mascara (1).svg" height="20px">
+                    Eyes
+                </a>
+                <a href="./product.html?f=lips">
+                    <img src="svgs/lipstick (1).svg" height="20px">
+                    Lips
+                </a>
+                <a href="./product.html?f=nails">
+                    <img src="svgs/nail-polish.svg" height="20px">
+                    Nails
+                </a>
+                <a href="./product.html?f=allproducts">
+                    <img src="svgs/make-up.svg" height="20px">
+                    All Products
+                </a>
+            </div>
+            <div id="heart-icon">
+                <em><span> made with</span><br></em>
+                <img src="svgs/heart (3).svg" alt="" width="15px" height="15px">
+                <br><em><span>defining beauty <br> our own terms</span></em>
+            </div>
+        </div>
+
+        <div id="body">
+
+            <div id="top">
+                <div>
+                    <span>embrace your beauty&nbsp;♡</span>
+                </div>
+            </div>
+        
+            <div id="banner">
+
+                <div id="banner-left">
+                    <div id="banner-img">
+                        <a href="/main.html">
+                            <img src="images/glam.png" alt="" height="120px">
+                        </a>
+                    </div>
+                    <!-- FOR MOBILE -->
+                    <div id="banner-left-mobile">
+                        <a href="login.html" id='icon-mobile'>
+                            <img src="svgs/in-love.svg" alt="account">
+                            <div class="icon-label">
+                                Account
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="banner-center">
+
+                    <div id="nav">
+                        <a href="./product.html?f=skin">Skin 
+                            <img src="svgs/facial-treatment (1).svg" height="40px">
+                        </a>
+                        <a href="./product.html?f=eyes">Eyes
+                            <img src="svgs/mascara.svg" height="40px">
+                        </a>
+                        <a href="./product.html?f=lips">Lips
+                            <img src="svgs/lipstick (3).svg" height="40px">
+                        </a>
+                        <a href="./product.html?f=nails">Nails
+                            <img src="svgs/nail-polish2.svg" height="40px">
+                        </a>
+                        <a href="./product.html?f=allproducts">All Products
+                            <img src="svgs/make-up (1).svg" height="40px">
+                        </a>
+                    </div>
+        
+                    <div id="banner-img-mobile">
+                        <a href="/main.html">
+                            <img src="images/glam.png" alt="">
+                        </a>
+                    </div>
+        
+                </div>
+
+                <div id="icons">
+                    
+                    <!-- <a href="/account/login" class='icon'> -->
+                    <a href="login.html" class='icon'>
+                        <img src="svgs/in-love.svg" alt="account">
+                        <div class="icon-label">
+                            Account
+                        </div>
+                    </a>
+
+                    <button class='btn icon'>
+                        <img src="svgs/search.svg" alt="search">
+                        <div class="icon-label">
+                            Search
+                        </div>
+                    </button>
+
+                    <a href="/cart" class="icon">
+                        <!-- <div>
+                            <span class="item-counter">0</span>
+                        </div> -->
+                        <img src="svgs/cart (2).svg" alt="cart">
+                        <div class="icon-label">
+                            Bag
+                        </div>
+                    </a>
+                </div>
+
+                
+            </div><br><br><br>
+            
+            <div id="main-content">
+                <div class="grid-product-items">
+                    <!-- <div class="grid-product-item">
+                        <a href="/main.html">
+                            <img src="" height="">
+                        </a>
+                        <ul class="product-info">
+                            <a href="/products/blabla">
+                                <li class="product-title">
+    
+                                </li>
+                            </a>
+                            <li class="product-price"></li>
+                            <li class="product-stars"></li>
+                        </ul>
+                        <button class="add-to-bag">ADD TO BAG</button>
+                    </div> -->
+                    
+                </div>
+
+                <!-- <script>
+                    document.getElementById("grid-product-item").innerHTML =
+                    data.name + " " + data.price;
+                </script> -->
+            </div> 
+        
+            <div id="search-overlay" aria-hidden="true">
+                <p class="label">
+                    tell us what you’re 
+                    looking for? ♡
+                </p>
+    
+                <form action="/search" method="get" role="search" class="search-form">
+                    <input type="search" name="q" placeholder="ENTER KEYWORD">
+                    <button class="btn" type="submit">
+                        <img src="svgs/search (2).svg" class="icon">
+                    </button>
+                </form>
+            </div>
+            <div id="search-overlay-dimmer"></div>
+        </div>
+        
+        <div id="overlay-dimmer"></div>
+
+    </body>
+</html>

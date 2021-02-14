@@ -1,0 +1,62 @@
+.grid-product-items{
+    /* margin: 0 20px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-product-item{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.grid-product-item img{
+    margin: 0 auto;
+}
+
+.product-info{
+    padding: 0;
+    margin-top: 20px;
+    font-family: "CeraPro","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.product-title{
+    margin-bottom: 5px;
+    max-width: 300px;
+}
+
+.product-price{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.add-to-bag:hover {
+	/* background: black;
+	color: white;
+    border: 1px solid black; */
+    transform: scale(0.95);
+}
+
+.add-to-bag {
+    display: block;
+    margin: 0 auto;
+	line-height: 27px;
+    padding: 0 30px;
+    /* background: #ffa580; */
+    background: white;
+	letter-spacing: 2px;
+	transition: .2s all ease-in-out;
+	outline: none;
+	border: 1px solid black;
+    box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+    cursor: pointer;
+    
+}
