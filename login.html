@@ -64,7 +64,7 @@
 
                 <div id="banner-left">
                     <div id="banner-img">
-                        <a href="/main.html">
+                        <a href="main.html">
                             <img src="images/glam.png" alt="" height="120px">
                         </a>
                     </div>
@@ -100,7 +100,7 @@
                     </div>
         
                     <div id="banner-img-mobile">
-                        <a href="/main.html">
+                        <a href="main.html">
                             <img src="images/glam.png" alt="">
                         </a>
                     </div>
@@ -139,18 +139,29 @@
             </div><br><br><br>
             
             <div id="main-content">
-                <form method="post" action="/main.html" id="login-form">
-                    <h1>Login</h1>
-                    <input placeholder="ENTER YOUR EMAIL ADDRESS" type="email" id= "email" name="email"required>
-                    <input placeholder="ENTER YOUR PASSWORD" type="password" id="password" name="password" required>
-                    <button class="login-button white-btn">LOGIN</button>
-                    <p>OR</p>
-                    <!-- <a href="/account/register" class="create-account-button"> -->
-                    <a href="register.html" class="create-account-button">
-                        CREATE ACCOUNT
-                    </a>
-                </form> 
-            </div> 
+                <div id="login-form" class="template">
+                    <form method="post" action="main.html">
+                        <h1>Login</h1>
+                        <input placeholder="ENTER YOUR EMAIL ADDRESS" type="email" id= "email" name="email"required>
+                        <input placeholder="ENTER YOUR PASSWORD" type="password" id="password" name="password" required>
+                        <button class="login-button white-btn">LOGIN</button>
+                        <p>OR</p>
+                        <a href="register.html" class="create-account-button">
+                            CREATE ACCOUNT
+                        </a>
+                    </form>
+                </div>
+                <div style="visibility: hidden" id="account-form" class="template">
+                    <div style="margin: auto;" id="account-info">
+                        <p class="first_name">first name:</p>
+                        <p class="last_name">last name:</p>
+                        <p class="tel">tel:</p>
+                        <p class="birth_date">birth date:</p>
+                        <p class="email">email:</p>
+                    </div>
+                    <button class="logout-button white-btn">LOGOUT</button>
+                </div>
+            </div>
         
             <div id="search-overlay" aria-hidden="true">
                 <p class="label">

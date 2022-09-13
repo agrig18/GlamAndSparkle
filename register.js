@@ -1,55 +1,62 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
+  if (localStorage.getItem("users") == null) {
+    var users = new Array();
+    localStorage.setItem("users", JSON.stringify(users));
+  }
 
-    if(window.localStorage.getItem("all_users") == null){
-        var users = new Array();
-        window.localStorage.setItem("all_users", JSON.stringify(users));
+  users = JSON.parse(localStorage.getItem("users"));
+
+  function Register(users) {
+    if (sessionStorage.getItem("currentUser") != null) {
+      alert("Account alrady created!");
+      return;
     }
 
-    allUsers = JSON.parse((localStorage.getItem("all_users")));
+    var firstname = document.getElementById("first_name").value;
+    var lastname = document.getElementById("last_name").value;
+    var telephone = document.getElementById("tel").value;
+    var email = document.getElementById("email").value;
 
-    function Register(allUsers){
-        var firstname = document.getElementById("first_name").value;
-        var lastname = document.getElementById("last_name").value;
-        var telephone = document.getElementById("tel").value;
-        var email = document.getElementById("email").value;
+    var day = document.getElementById("birthday-day");
+    var bday = day.options[day.selectedIndex].value;
+    var month = document.getElementById("birthday-month");
+    var bmonth = month.options[month.selectedIndex].value;
+    var year = document.getElementById("birthday-year");
+    var byear = year.options[year.selectedIndex].value;
 
-        var day = document.getElementById("birthday_day");
-        var bday = day.options[day.selectedIndex].text;
-        var month = document.getElementById("birthday_month");
-        var bmonth = month.options[month.selectedIndex].text;
-        var year = document.getElementById("birthday_year");
-        var byear = year.options[year.selectedIndex].text;
-        
-        var date = "" + bday + " " + bmonth + ", " + byear;
+    var date = "" + bday + " " + bmonth + " " + byear;
 
-        var password = document.getElementById("password").value;
-    
-        for (let i = 0; i < allUsers.length; i++) {
-            let curUser = allUsers[i];
-            if(curUser.email == email){
-                alert("Email is not valid!");
-                return;
-            }
-        }
+    var password = document.getElementById("password").value;
 
-        let user = {
-            first_name: firstname,
-            last_name: lastname,
-            tel: telephone,
-            birth_date: date,
-            email: email,
-            password: btoa(password)
-        };
-
-        sessionStorage.setItem("currentUser", user);
-        allUsers.push(user);
-        localStorage.setItem('all_users', JSON.stringify(allUsers));
+    for (let i = 0; i < users.length; i++) {
+      let curUser = users[i];
+      if (curUser.email == email) {
+        alert("Email is not valid!");
+        return;
+      }
     }
 
-    let register_btn = document.querySelector('.register-button');
-    register_btn.addEventListener('click',function(event){
-        Register(allUsers);
-        event.preventDefault();
-    });
+    let user = {
+      first_name: firstname,
+      last_name: lastname,
+      tel: telephone,
+      birth_date: date,
+      email: email,
+      password: btoa(password),
+    };
 
-})
+    // console.log("user", user);
+
+    sessionStorage.setItem("currentUser", JSON.stringify(user));
+    users.push(user);
+    localStorage.setItem("users", JSON.stringify(users));
+
+    window.location.replace("login.html");
+  }
+
+  let register_form = document.getElementById("register-form");
+  register_form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    Register(users);
+  });
+});
